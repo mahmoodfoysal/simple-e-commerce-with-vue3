@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 class="text-3xl text-center">Products</h1>
+    <h1 class="text-3xl text-center tracking-wide text-lime-500 font-bold mt-5 mb-5">Products</h1>
 
     <div class="grid sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 gap-3 mt-2">
         <div v-for="n in 10" class="sm:col-span-12 md:col-span-6 lg:col-span-4">

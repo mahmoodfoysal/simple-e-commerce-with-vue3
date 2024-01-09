@@ -1,13 +1,8 @@
 <script setup>
-import slider_1 from '../../assets/images/slider1.jpg';
-import slider_2 from '../../assets/images/slider2.jpg';
-import slider_3 from '../../assets/images/slider3.jpg';
+
 </script>
 
 <template>
-
-
-
 
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->

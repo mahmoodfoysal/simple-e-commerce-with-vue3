@@ -5,9 +5,18 @@
 <template>
     <div class="navbar bg-base-200 sticky top-0 z-50">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-xl">NavBar</a>
         </div>
+        
         <div class="flex-none">
+            <!-- menu items start  -->
+            <div class="flex">
+                <p class="me-5 cursor-pointer font-medium">Home</p>
+                <p class="me-5 cursor-pointer font-medium">Products</p>
+                <p class="me-5 cursor-pointer font-medium">Contact</p>
+                <p class="me-5 cursor-pointer font-medium">FAQ</p>
+            </div>
+            <!-- menu item end  -->
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                     <div class="indicator">
@@ -19,6 +28,7 @@
                         <span class="badge badge-sm indicator-item">8</span>
                     </div>
                 </div>
+
                 <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                     <div class="card-body">
                         <span class="font-bold text-lg">8 Items</span>
@@ -28,8 +38,11 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+
             <div class="dropdown dropdown-end">
+
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                     <div class="w-10 rounded-full">
                         <img alt="Tailwind CSS Navbar component"
