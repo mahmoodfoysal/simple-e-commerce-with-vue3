@@ -3,6 +3,19 @@ import SideBar from './components/SideBar/SideBar.vue';
 import Home from './components/Home/Home.vue';
 import NavigationBar from './components/Shared/NavigationBar/NavigationBar.vue';
 import Footer from './components/Shared/Footer/Footer.vue';
+import vue from '@heroicons/vue';
+import { ref } from 'vue';
+
+// loading data from json file 
+import products from '/data/products.json';
+
+
+// declare all ref here 
+const productInfo = ref(null);
+
+// reactivation json data 
+productInfo.value = products;
+
 </script>
 
 <template>
@@ -12,7 +25,7 @@ import Footer from './components/Shared/Footer/Footer.vue';
     
     <div class="sm:col-span-12 md:col-span-6 lg:col-span-3">
       <!-- sidebar  -->
-      <SideBar></SideBar>
+      <SideBar :productInfo="productInfo"></SideBar>
     </div>
     <div class="sm:col-span-12 md:col-span-6 lg:col-span-9">
       <Home></Home>
