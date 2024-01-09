@@ -12,9 +12,16 @@ import products from '/data/products.json';
 
 // declare all ref here 
 const productInfo = ref(null);
+const receivedProductByFilter = ref(null);
 
 // reactivation json data 
 productInfo.value = products;
+
+const handleReceivedProductByFilter = (product) => {
+  receivedProductByFilter.value = product;
+  // console.log(product);
+}
+
 
 </script>
 
@@ -25,10 +32,14 @@ productInfo.value = products;
     
     <div class="sm:col-span-12 md:col-span-6 lg:col-span-3">
       <!-- sidebar  -->
-      <SideBar :productInfo="productInfo"></SideBar>
+      <SideBar 
+      :productInfo="productInfo"
+      @product-by-filter-receive="handleReceivedProductByFilter"
+      ></SideBar>
     </div>
     <div class="sm:col-span-12 md:col-span-6 lg:col-span-9">
-      <Home></Home>
+      <Home 
+      :receivedProductByFilter="receivedProductByFilter"></Home>
     </div>
   </div>
   <Footer></Footer>
