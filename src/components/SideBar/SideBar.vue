@@ -45,7 +45,7 @@ const handleProductShow = (products) => {
           :aria-labelledby="`accordion-collapse-heading-${cIndex}`">
           <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
             <h6
-            @click.prevent="handleProductShow(subCategory)"
+            @click="handleProductShow(subCategory)"
             class="cursor-pointer font-medium mb-2"
             v-for="(subCategory, sIndex) in category?.parent_cat_sub_info" 
             :key="sIndex">

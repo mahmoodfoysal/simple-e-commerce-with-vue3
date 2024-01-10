@@ -19,7 +19,6 @@ productInfo.value = products;
 
 const handleReceivedProductByFilter = (product) => {
   receivedProductByFilter.value = product;
-  // console.log(product);
 }
 
 
