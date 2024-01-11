@@ -12,6 +12,9 @@ const routes = [
         path: '/about', name: 'AboutUs', component: () => import('@/components/AboutUs/AboutUs.vue')
     },
     {
+        path: '/faq', name: 'FAQ', component: () => import('@/components/FAQ/FAQ.vue')
+    },
+    {
         path: '/:pathMatch(.*)*', name: 'PageNotFound', component: NotFound
     }
 
@@ -20,6 +23,7 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    linkActiveClass: 'active-link'
 })
 
 export default router;

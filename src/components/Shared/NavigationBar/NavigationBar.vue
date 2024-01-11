@@ -11,10 +11,11 @@
         <div class="flex-none">
             <!-- menu items start  -->
             <div class="flex">
-                <p class="me-5 cursor-pointer font-medium">Home</p>
-                <p class="me-5 cursor-pointer font-medium">Products</p>
-                <p class="me-5 cursor-pointer font-medium">Contact</p>
-                <p class="me-5 cursor-pointer font-medium">FAQ</p>
+                <router-link to="/"><p class="me-5 cursor-pointer font-medium">Home</p></router-link>
+                <router-link to="/products"><p class="me-5 cursor-pointer font-medium">Products</p></router-link>
+                <router-link to="/contact"><p class="me-5 cursor-pointer font-medium">Contact</p></router-link>
+                <router-link to="/about"><p class="me-5 cursor-pointer font-medium">About Us</p></router-link>
+                <router-link to="/faq"><p class="me-5 cursor-pointer font-medium">FAQ</p></router-link>
             </div>
             <!-- menu item end  -->
             <div class="dropdown dropdown-end">
@@ -64,4 +65,8 @@
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.active-link {
+    color: blue;
+}
+</style>
