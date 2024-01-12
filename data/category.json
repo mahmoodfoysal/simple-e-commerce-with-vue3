@@ -1,0 +1,48 @@
+[
+    {
+        "parent_cat_id": 1,
+        "parent_cat_name": "Beauty and Cosmetics",
+        "parent_cat_sub_info": [
+            {
+                "sub_cat_id": 1,
+                "sub_cat_name": "Traditional Wears"
+            },
+            {
+                "sub_cat_id": 2,
+                "sub_cat_name": "Western Wear"
+            }
+        ]
+    },
+    {
+        "parent_cat_id": 2,
+        "parent_cat_name": "Men's & Boys' Fashion",
+        "parent_cat_sub_info": [
+            {
+                "sub_cat_id": 3,
+                "sub_cat_name": "Shirts"
+            },
+            {
+                "sub_cat_id": 4,
+                "sub_cat_name": "Pants"
+            },
+            {
+                "sub_cat_id": 5,
+                "sub_cat_name": "Shoes"
+            }
+        ]
+    },
+    {
+        "parent_cat_id": 3,
+        "parent_cat_name": "Electronics Devices",
+        "parent_cat_sub_info": [
+            {
+                "sub_cat_id": 6,
+                "sub_cat_name": "Smartphones"
+            },
+            {
+                "sub_cat_id": 7,
+                "sub_cat_name": "Laptop"
+            }
+        ]
+    }
+]
